@@ -25,7 +25,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['MyHeadlessChrome'],
+    browsers: ['Chrome', 'ChromeHeadless'],
     customLaunchers: {
       MyHeadlessChrome: {
       base: 'ChromeHeadless',
@@ -35,4 +35,5 @@ module.exports = function (config) {
     singleRun: true,
     restartOnFileChange: true
   });
+  process.env.CHROME_BIN = require('puppeteer').executablePath();
 };
