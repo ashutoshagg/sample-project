@@ -3,7 +3,7 @@
 
 module.exports = function (config) {
   process.env.CHROME_BIN = require('puppeteer').executablePath();
-
+  process.env.NO_PROXY="localhost, 0.0.0.0/4201, 0.0.0.0/9876";
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
