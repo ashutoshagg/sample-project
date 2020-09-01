@@ -10,7 +10,7 @@
     "build": "ng build --prod",
     "e2e": "ng e2e",
     "ng": "ng",
-    "cibuild": "ng test --code-coverage && ng build --prod --no-progress"
+    "cibuild": "ng build --prod --no-progress"
   },
   "keywords": [],
   "author": "",
